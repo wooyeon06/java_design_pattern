@@ -7,8 +7,7 @@ package adapter;
  */
 public class Main {
     public static void main(String[] args) {
-        OldElectricitySystem oldSystem = new OldElectricitySystem();
-        Voltage adapter = new Adapter(oldSystem);
+        Voltage adapter = new Adapter(new OldElectricitySystem());
 
         System.out.println("Voltage: " + adapter.getVoltage());
     }
